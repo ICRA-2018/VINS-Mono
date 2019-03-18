@@ -1,4 +1,5 @@
 # VINS-Mono
+<a href="#roslab-run"><img src="https://img.shields.io/badge/ROSLab-run-brightgreen.svg"></a>
 ## A Robust and Versatile Monocular Visual-Inertial State Estimator
 **29 Dec 2017**: New features: Add map merge, pose graph reuse, online temporal calibration function, and support rolling shutter camera. Map reuse videos: 
 
@@ -155,3 +156,6 @@ The source code is released under [GPLv3](http://www.gnu.org/licenses/) license.
 We are still working on improving the code reliability. For any technical issues, please contact Tong QIN <tong.qinATconnect.ust.hk> or Peiliang LI <pliapATconnect.ust.hk>.
 
 For commercial inquiries, please contact Shaojie SHEN <eeshaojieATust.hk>
+
+# ROSLab Run
+This is a test.
