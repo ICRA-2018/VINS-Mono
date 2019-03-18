@@ -158,4 +158,39 @@ We are still working on improving the code reliability. For any technical issues
 For commercial inquiries, please contact Shaojie SHEN <eeshaojieATust.hk>
 
 # ROSLab Run
-This is a test.
+
+## Prerequisites:
+* [Docker](https://www.docker.com/)
+* [nvidia-docker](https://github.com/nvidia/nvidia-docker/wiki/Installation-(version-2.0))
+* Tested on Ubuntu Linux 16.04, Docker version 18.06.1-ce, NVIDIA Driver version 410.48.
+
+## 1. Clone the repository and build docker image:
+```
+git clone https://github.com/ICRA-2018/VINS-Mono.git
+cd VINS-Mono
+./roslab_build
+```
+## 2. Download dataset:
+```
+wget \
+http://robotics.ethz.ch/~asl-datasets/ijrr_euroc_mav_dataset/machine_hall/MH_01_easy/MH_01_easy.bag \
+--output-document=YOUR_PATH_TO_DATASET/MH_01_easy.bag
+```
+## 3. Launch ROSLab image:
+```
+./roslab_run --volume=YOUR_PATH_TO_DATASET:/dataset:rw
+```
+## 4. Open JupyterLab in your browser:
+[http://localhost:8888/lab/tree/README.ipynb](http://localhost:8888/lab/tree/README.ipynb)
+
+## 5. Run in JupyterLab:
+Open three notebooks, launch the `vins_estimator`, `rviz` and `play the bag file` respectively. Take `MH_01` for example:
+```
+roslaunch vins_estimator euroc.launch 
+```
+```
+roslaunch vins_estimator vins_rviz.launch
+```
+```
+rosbag play /dataset/MH_01_easy.bag 
+```
