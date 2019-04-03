@@ -1,5 +1,4 @@
 # VINS-Mono
-[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/icra2018/vins-mono.svg)](https://hub.docker.com/r/icra2018/vins-mono)
 <a href="#roslab-run"><img src="https://img.shields.io/badge/ROSLab-HowTo-brightgreen.svg"></a>
 ## A Robust and Versatile Monocular Visual-Inertial State Estimator
 **29 Dec 2017**: New features: Add map merge, pose graph reuse, online temporal calibration function, and support rolling shutter camera. Map reuse videos: 
