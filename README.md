@@ -1,5 +1,6 @@
 # VINS-Mono
-<a href="#roslab-run"><img src="https://img.shields.io/badge/ROSLab-run-brightgreen.svg"></a>
+[![Docker Cloud Build Status](https://img.shields.io/docker/cloud/build/icra2018/vins-mono.svg)](https://hub.docker.com/r/icra2018/vins-mono)
+<a href="#roslab-run"><img src="https://img.shields.io/badge/ROSLab-HowTo-brightgreen.svg"></a>
 ## A Robust and Versatile Monocular Visual-Inertial State Estimator
 **29 Dec 2017**: New features: Add map merge, pose graph reuse, online temporal calibration function, and support rolling shutter camera. Map reuse videos: 
 
@@ -183,14 +184,3 @@ http://robotics.ethz.ch/~asl-datasets/ijrr_euroc_mav_dataset/machine_hall/MH_01_
 ## 4. Open JupyterLab in your browser:
 [http://localhost:8888/lab/tree/README.ipynb](http://localhost:8888/lab/tree/README.ipynb)
 
-## 5. Run in JupyterLab:
-Open three notebooks, launch the `vins_estimator`, `rviz` and `play the bag file` respectively. Take `MH_01` for example:
-```
-roslaunch vins_estimator euroc.launch 
-```
-```
-roslaunch vins_estimator vins_rviz.launch
-```
-```
-rosbag play /dataset/MH_01_easy.bag 
-```
